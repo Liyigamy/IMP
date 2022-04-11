@@ -1,0 +1,600 @@
+* {
+    cursor: default;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+h1{
+    font-size: 3.5em;
+    cursor: default;
+}
+h2{
+    font-size: 2.7em;
+    color: white;
+    cursor: default;
+}
+
+h3{
+    font-size: 2em;
+    color: rgb(245, 245, 245);
+    cursor: default;
+}
+
+a, p{
+    text-decoration: none;
+}
+/* Empieza el header */
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    border-bottom: solid 1px #e0ae0d;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-nav img{
+    width: 150px;
+    height: 100px;
+}
+
+.menu{
+    margin: 1%;
+}
+
+.navegacion ul{
+    display: flex;
+    width: 15%;
+    list-style: none;
+}
+
+.navegacion ul li a{
+    background-color: #e0ae0d;
+    font-size: 0.9em;
+    padding: 10px 20px;
+    color: rgb(12, 12, 12);
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.5);;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navegacion ul li a:hover{
+    background-color: #ffffff;
+}
+
+/* Termina el Header */
+
+body{
+    background-image: linear-gradient(rgb(59, 59, 59),rgb(153, 153, 153),rgb(61, 61, 61));
+    margin-top: 125px;
+}
+
+/* Empieza el INDEX */
+
+.inicio{
+    background-color: rgba(0, 0, 0, 0.87);
+    padding: 5% 5%;
+    margin: 3%;
+    border-radius: 50px;
+    border: 2px solid rgb(214, 169, 43);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 1.5%;
+    border-radius: 15px;
+}
+
+.hero img {
+    width: 75%;
+    height: 550px;
+    max-width: 1400px;
+    text-align: center;
+}
+
+.hero p{
+    max-width: 1400px;
+    padding: 0% 7%;
+    text-align: center;
+}
+
+#link{
+    padding: 10px 20px;
+    background-color: #e0ae0d;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: black;
+    margin: 20px 0px;
+    text-decoration: none
+}
+/* Termina el INDEX */
+/* Empieza CURSOS */
+#cursos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.carta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1100px;
+    padding: 5px;
+    margin: 20px;
+    border: 1px solid rgb(214, 169, 43);
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
+    transition: all 500ms ease;
+}
+
+.carta:hover{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+    transform: translate(1%);
+}
+
+.carta img{
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.carta-parrafo h3{
+    color: black;
+    border: 0.1px solid rgb(214, 169, 43);
+    background-color: rgb(214, 169, 43);
+    border-radius: 10px;
+    border-color: black;
+    padding: 7px;
+    font-size: 2em;
+}
+
+.carta-parrafo p{
+    padding-top: 75px;
+}
+
+.carta button{
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgb(214, 169, 43);
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 51%);
+    color: black;
+    margin-left: 7px;
+}
+
+/* Termina CURSOS */
+/* Empieza CONTRATAR */
+
+.contratar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondo-contratar{
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 80%;
+    margin: 20px;
+    border: solid rgb(214, 169, 43) 1px;
+    border-radius: 15px;
+    max-width: 1000px;
+}
+
+.contacto{
+    display: grid;
+    padding: 20px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1.2fr 0.4fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1.2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "nombre ubi"
+        "numero ubi"
+        "pais ubi"
+        "ciudad ubi"
+        "email ubi"
+        "comentario ubi";
+}
+
+.contacto .numero, .pais, .ciudad, .email, .comentario, .nombre{
+    background-color: rgb(10, 10, 8);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px rgb(245, 245, 245);
+    height: 50px;
+    margin: 10px;
+    padding-bottom: 5px;
+    align-items: center;
+    margin: 20px;
+}
+
+.nombre{
+    grid-area: nombre;
+}
+.numero{
+    grid-area: numero;
+}
+.pais{
+    grid-area: pais;
+}
+.ciudad{
+    grid-area: ciudad;
+}
+.email{
+    grid-area: email;
+}
+.comentario{
+    grid-area: comentario;
+    height: 200px;
+}
+
+.ubi{
+    grid-area: ubi;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ubi iframe{
+    height: 100%;
+}
+
+.comentario textarea{
+    color: black;
+    width: 95%;
+    height: 95%;
+    background-color: #e0ae0d;
+}
+
+.comentario input{
+    margin: 0 40%;
+    background-color: #e0ae0d;
+    height: 30px;
+    color: black;
+}
+
+.opcion{
+    display: flex;
+    color: black;
+    background-color: rgb(214, 169, 43);
+    width: 80%;
+}
+/* Termina CONTRATAR */
+/* Empieza PROYECTOS */
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.proyectos-trabajos{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.87);
+    border: 2px solid rgb(214, 169, 43);
+    border-radius: 5px;
+    width: 90%;
+    margin:20px 0px ;
+}
+
+.carta-proyecto{
+    margin: 5px;
+    width: 100%;
+    background-color: black;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
+    text-align: center;
+    border-radius: 7px;
+    border: solid 2px black;
+    transition: all 400ms ease;
+}
+
+.proyectos-trabajos img{
+    width: 100%;
+    display: flex;
+    height: 500px;
+}
+
+.carta-proyecto h3{
+    background-color: #e0ae0d;
+    color: black;
+    font-size: 45px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.carta-proyecto p{
+    background-color: #e0ae0d;
+    color: black;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 20px;
+}
+
+.carta-proyecto:hover{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+    transform: translate(3%);
+    background-color: rgb(59, 59, 59);
+}
+
+/* Termina PROYECTOS */
+/* Empieza CARACTERISTICAS */
+.caracteristicas {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "grilla1 grilla6"
+    "grilla2 grilla7"
+    "grilla3 grilla8"
+    "grilla4 grilla9"
+    "grilla5 grilla10";
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    max-width: 1450px;
+}
+.grilla1 { 
+    grid-area: grilla1; 
+}
+.grilla2 { 
+    grid-area: grilla2;
+}
+.grilla3{
+    grid-area: grilla3;
+}
+.grilla4{
+    grid-area: grilla4;
+}
+.grilla5{
+    grid-area: grilla5;
+}
+.grilla6{
+    grid-area: grilla6;
+}
+.grilla7{
+    grid-area: grilla7;
+}
+.grilla8{
+    grid-area: grilla8;
+}
+.grilla9{
+    grid-area: grilla9;
+}
+.grilla10{
+    grid-area: grilla10;
+}
+
+#caracter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.caracteristicas div{
+    display: flex;
+    text-align: center;
+    background-color: black;
+    margin: 30px;
+    border:solid 2px rgb(214, 169, 43);
+    border-radius: 30px;
+    padding:10px 30px;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    max-width:400px;
+}
+
+.caracteristicas div img{
+    width: 300;
+    max-height:275px;
+    height: 300px;
+    border: solid 3px rgb(214, 169, 43);
+}
+
+/* Termina CARACTERISTICAS */
+/* Empieza el FOOTER */
+
+footer{
+    background: black;
+    width: 100%;
+    border-top: solid #e0ae0d 1px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container-footer{
+    margin: 0px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    height: 75px;
+    align-items: center;
+}
+
+.redes a{
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 51%);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: black;
+    margin: auto 2%;
+    padding: 5% 2%;
+    background-color: #e0ae0d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Termina el FOOTER */
+/* MEDIA QUERYS */
+
+@media screen and (max-width:1280px){
+    /* Proyectos */
+    .proyectos-trabajos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+    }
+
+    .carta-proyecto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 5px 0px;
+        padding: 0px 5px;
+    }
+
+    .carta-proyecto a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carta-proyecto img{
+        display: flex;
+        width: 100%;
+        height: 350px;
+        margin: 10px 0px;
+    }
+
+    .carta-proyecto h3{
+        width: 100%;
+    }
+    /* Proyectos */
+    /* Contacto */
+    
+    .ubi h3{
+        display: none;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .comentario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto div {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .comentario textarea{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ubi iframe{
+        display: none;
+    }
+
+    .contacto .numero, .pais, .ciudad, .email, .comentario, .nombre{
+        margin: 0;
+    }
+    /* Contacto */
+
+}
+@media screen and (max-width:770px){
+
+    /* Body */
+    .container{
+        margin-top: 75px;
+        }
+    /* Body */
+    /* curso */
+    .carta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 550px;
+    }
+    .carta img{
+        width: 90%;
+        margin: 10px 0px;
+    }
+    .carta-parrafo p{
+        padding: 2%;
+    }
+
+    .carta-parrafo h3{
+    width: 90%;
+    }
+
+    .carta-parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    /* curso */
+    /* Contratar */
+
+    /* Contratar */
+}
+@media screen and (max-width:520px) {
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items:initial  ;
+    }
+    .container-footer p{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* MEDIA QUERYS */
