@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     color: #ffffff;
+    font-size: 21px;
+    
 }
 
 h1{
@@ -24,6 +26,14 @@ h3{
 a, p{
     text-decoration: none;
 }
+
+html{
+    position: relative;
+    height: 100%;
+}
+
+/* Empieza Boostrap */
+/* Termina Boostrap */
 /* Empieza el header */
 
 .header{
@@ -86,11 +96,15 @@ body{
 /* Empieza el INDEX */
 
 .inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.87);
     padding: 5% 5%;
     margin: 3%;
     border-radius: 50px;
     border: 2px solid rgb(214, 169, 43);
+    margin-top: 150px;
 }
 
 .hero {
@@ -99,7 +113,9 @@ body{
     align-items: center;
     background-color: rgb(0, 0, 0);
     padding: 1.5%;
+    border: solid 1px rgb(214, 169, 43);
     border-radius: 15px;
+    max-width: 1300px;
 }
 
 .hero img {
@@ -130,6 +146,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 150px;
 }
 
 .carta{
@@ -153,7 +170,7 @@ body{
 
 .carta img{
     width: 250px;
-    height: 250px;
+    height: 350px;
     margin-right: 10px;
     border-radius: 15px;
 }
@@ -191,6 +208,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 10px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .fondo-contratar{
@@ -200,6 +220,7 @@ body{
     border: solid rgb(214, 169, 43) 1px;
     border-radius: 15px;
     max-width: 1000px;
+    font-size: 10px;
 }
 
 .contacto{
@@ -217,6 +238,7 @@ body{
         "ciudad ubi"
         "email ubi"
         "comentario ubi";
+        font-size: 10px;
 }
 
 .contacto .numero, .pais, .ciudad, .email, .comentario, .nombre{
@@ -231,6 +253,7 @@ body{
     padding-bottom: 5px;
     align-items: center;
     margin: 20px;
+    font-size: 10px;
 }
 
 .nombre{
@@ -269,6 +292,7 @@ body{
     width: 95%;
     height: 95%;
     background-color: #e0ae0d;
+    font-size: 20px;
 }
 
 .comentario input{
@@ -294,6 +318,8 @@ body{
     width: 100%;
     margin: auto;
     text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .proyectos-trabajos{
@@ -334,6 +360,11 @@ body{
     color: black;
     border-radius: 0px 0px 10px 10px;
     font-size: 20px;
+    margin: 0;
+}
+
+.carta-proyecto a{
+    text-decoration: none;
 }
 
 .carta-proyecto:hover{
@@ -363,6 +394,9 @@ body{
     align-items: center;
     justify-items: center;
     max-width: 1450px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
 }
 .grilla1 { 
     grid-area: grilla1; 
@@ -415,12 +449,24 @@ body{
     flex-direction: column;
     align-items: center;
     max-width:400px;
+    padding: 0;
+}
+
+.caracteristicas div p{
+    background-color: #e0ae0d;
+    margin-top: 10px;
+    border-radius: 0px 0px 30px 30px;
+    margin: 5px;
+    color: black;
+    margin-bottom: 5px;
+    width: 300px;
+    height: 260px;
 }
 
 .caracteristicas div img{
-    width: 300;
-    max-height:275px;
-    height: 300px;
+    width: 300px;
+    max-height:400px;
+    height: 400px;
     border: solid 3px rgb(214, 169, 43);
 }
 
@@ -436,6 +482,7 @@ footer{
     align-items: center;
     height: 100px;
     border-radius: 10px 10px 0px 0px;
+    bottom: 0;
 }
 
 .container-footer{
@@ -492,12 +539,13 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
     }
 
     .carta-proyecto img{
         display: flex;
         width: 100%;
-        height: 350px;
+        height: 100%;
         margin: 10px 0px;
     }
 
@@ -544,16 +592,12 @@ footer{
         margin: 0;
     }
     /* Contacto */
-
-}
-@media screen and (max-width:770px){
-
-    /* Body */
-    .container{
-        margin-top: 75px;
-        }
-    /* Body */
     /* curso */
+.programas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
     .carta{
         display: flex;
         flex-direction: column;
@@ -579,20 +623,58 @@ footer{
     align-items: center;
     }
     /* curso */
+
+}
+
+@media screen and (max-width:880px){
+    .header{
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .menu .logo-nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:770px){
+
+    /* Body */
+    .container{
+        margin-top: 75px;
+        }
+    /* Body */
     /* Contratar */
 
     /* Contratar */
+
+    /* Footer */
+    footer{
+        display: flex;
+    }
+
+    .container-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    }
+
+    .redes a{
+        display: flex;
+        padding: 1% 2%;
+        margin:0;
+        font-size: 20px;
+    }
+    /* Footer */
 }
 @media screen and (max-width:520px) {
-    .container-footer{
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        align-items:initial  ;
-    }
     .container-footer p{
         display: flex;
         justify-content: center;
+        margin: 0;
     }
 }
 
