@@ -131,6 +131,10 @@ body{
     text-align: center;
 }
 
+#link:hover{
+    background-color: #ffffff;
+}
+
 #link{
     padding: 10px 20px;
     background-color: #e0ae0d;
@@ -199,6 +203,10 @@ body{
     box-shadow: 2px 2px 10px rgb(0 0 0 / 51%);
     color: black;
     margin-left: 7px;
+}
+
+.carta button:hover{
+    background-color: #ffffff;
 }
 
 /* Termina CURSOS */
@@ -460,7 +468,7 @@ body{
     color: black;
     margin-bottom: 5px;
     width: 300px;
-    height: 100%;
+    height: 200px;
 }
 
 .caracteristicas div img{
