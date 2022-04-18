@@ -3,8 +3,12 @@
     margin: 0;
     box-sizing: border-box;
     color: #ffffff;
-    font-size: 21px;
+    font-size: 18px;
     
+}
+
+.asde{
+    height: 100%;
 }
 
 h1{
@@ -32,10 +36,7 @@ html{
     height: 100%;
 }
 
-/* Empieza Boostrap */
-/* Termina Boostrap */
 /* Empieza el header */
-
 .header{
     display: flex;
     align-items: center;
@@ -90,7 +91,6 @@ html{
 
 body{
     background-image: linear-gradient(rgb(59, 59, 59),rgb(153, 153, 153),rgb(61, 61, 61));
-    margin-top: 125px;
 }
 
 /* Empieza el INDEX */
@@ -216,7 +216,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: 150px;
     margin-bottom: 150px;
 }
@@ -228,7 +228,7 @@ body{
     border: solid rgb(214, 169, 43) 1px;
     border-radius: 15px;
     max-width: 1000px;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .contacto{
@@ -250,18 +250,16 @@ body{
 }
 
 .contacto .numero, .pais, .ciudad, .email, .comentario, .nombre{
-    background-color: rgb(10, 10, 8);
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid 1px rgb(245, 245, 245);
     height: 50px;
     margin: 10px;
     padding-bottom: 5px;
     align-items: center;
     margin: 20px;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .nombre{
@@ -327,7 +325,7 @@ body{
     margin: auto;
     text-align: center;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 247px;
 }
 
 .proyectos-trabajos{
@@ -478,6 +476,14 @@ body{
     border: solid 3px rgb(214, 169, 43);
 }
 
+.caracteristicas div h3{
+    background-color: #e0ae0d;
+    width: 96%;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 10px;
+    color: black;
+}
+
 /* Termina CARACTERISTICAS */
 /* Empieza el FOOTER */
 
@@ -490,7 +496,7 @@ footer{
     align-items: center;
     height: 100px;
     border-radius: 10px 10px 0px 0px;
-    bottom: 0;
+    margin-bottom: 0;
 }
 
 .container-footer{
