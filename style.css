@@ -749,7 +749,10 @@ footer{
     height: 100%;
     margin: 0;
     }
-
+    .redes{
+        width: 100%;
+        justify-content: center;
+    }
     .redes a{
         display: flex;
         padding: 1% 2%;
