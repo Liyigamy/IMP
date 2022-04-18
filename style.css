@@ -750,14 +750,16 @@ footer{
     margin: 0;
     }
     .redes{
-        width: 100%;
+        width: 80%;
         justify-content: center;
     }
     .redes a{
         display: flex;
-        padding: 1% 2%;
-        margin:0;
+        padding: 0;
+        margin: 0;
         font-size: 20px;
+        width: 100px;
+        justify-content: center;
     }
     /* Footer */
 }
@@ -766,6 +768,18 @@ footer{
         display: flex;
         justify-content: center;
         margin: 0;
+    }
+
+    .caracteristicas div{
+        width: 250px;
+    }
+
+    .caracteristicas div img{
+        width: 220px;
+    }
+
+    .caracteristicas div p{
+        width: 240px;
     }
 }
 /* MEDIA QUERYS */
