@@ -529,6 +529,13 @@ footer {
     #caracter .caracteristicas {
       display: flex;
       flex-direction: column; }
+      #caracter .caracteristicas div {
+        margin: 10px;
+        width: 80%; }
+        #caracter .caracteristicas div img {
+          width: 90%; }
+        #caracter .caracteristicas div p {
+          width: 90%; }
   /* Caracteristicas */ }
 
 @media screen and (max-width: 770px) {
