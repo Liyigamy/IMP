@@ -1,0 +1,11 @@
+$color-principal: linear-gradient(rgb(59, 59, 59),rgb(153, 153, 153),rgb(61, 61, 61));
+$amarillo: rgb(214, 169, 43);
+$color-nav: rgb(12, 12, 12);
+$centrado: center;
+$borde-amarillo: solid 1px rgb(214, 169, 43);
+
+@mixin Flex($flex, $column, $centro){
+    display: $flex;
+    flex-direction: $column;
+    align-items: $centro;
+}
