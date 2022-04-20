@@ -42,6 +42,8 @@
         div{
             width: 80%;
             display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
             margin: 0;
         }
@@ -50,8 +52,12 @@
             display: flex;
             flex-direction: column;
         }
+        .contacto{
+            
+        }
     }
     .ubi{
+        display: none;
         h3{
             display: none;
         }
@@ -163,8 +169,16 @@
     /* Proyectos */
     /* caracteristicas */
     #caracter{
-        margin-top: 50px;
-        margin-bottom: 40px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        .caracteristicas{
+            display: flex;
+            flex-direction: column;
+        }
     }
     /* Caracteristicas */
 }
@@ -199,6 +213,15 @@
         }
     }
     /* Footer */
+}
+@media screen and (max-width:625px) {
+    #cursos{
+        .programas{
+            .carta{
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:520px){

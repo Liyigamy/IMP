@@ -421,16 +421,20 @@ footer {
     .contacto div {
       width: 80%;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
       margin: 0; }
     .contacto textarea {
       width: 60%;
       display: flex;
       flex-direction: column; }
-  .ubi h3 {
+  .ubi {
     display: none; }
-  .ubi iframe {
-    display: none; }
+    .ubi h3 {
+      display: none; }
+    .ubi iframe {
+      display: none; }
   .contacto .numero, .pais, .ciudad, .email, .comentario, .nombre {
     margin: 0; }
   /* Contacto */
@@ -516,8 +520,15 @@ footer {
   /* Proyectos */
   /* caracteristicas */
   #caracter {
-    margin-top: 50px;
-    margin-bottom: 40px; }
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+    #caracter .caracteristicas {
+      display: flex;
+      flex-direction: column; }
   /* Caracteristicas */ }
 
 @media screen and (max-width: 770px) {
@@ -545,6 +556,10 @@ footer {
           width: 100px;
           justify-content: center; }
   /* Footer */ }
+
+@media screen and (max-width: 625px) {
+  #cursos .programas .carta {
+    flex-direction: column; } }
 
 @media screen and (max-width: 520px) {
   .container-footer p {
