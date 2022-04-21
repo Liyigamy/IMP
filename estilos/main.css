@@ -413,27 +413,27 @@ footer {
         width: 100%; }
   /* Proyectos */
   /* Contacto */
-  .contacto {
+  .contratar .fondo-contratar .contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .contacto div {
+    .contratar .fondo-contratar .contacto div {
       width: 80%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin: 0; }
-    .contacto textarea {
+    .contratar .fondo-contratar .contacto textarea {
       width: 60%;
       display: flex;
       flex-direction: column; }
-  .ubi {
+  .contratar .fondo-contratar .ubi {
     display: none; }
-    .ubi h3 {
+    .contratar .fondo-contratar .ubi h3 {
       display: none; }
-    .ubi iframe {
+    .contratar .fondo-contratar .ubi iframe {
       display: none; }
   .contacto .numero, .pais, .ciudad, .email, .comentario, .nombre {
     margin: 0; }
@@ -512,6 +512,10 @@ footer {
   .contratar {
     margin-top: 50px;
     margin-bottom: 40px; }
+    .contratar .fondo-contratar .contacto {
+      display: flex; }
+      .contratar .fondo-contratar .contacto div {
+        margin: 20%; }
   /* Contratar */
   /* Proyectos */
   .proyectos {
@@ -578,4 +582,8 @@ footer {
     .caracteristicas div img {
       width: 220px; }
     .caracteristicas div p {
-      width: 240px; } }
+      width: 240px; }
+  .contacto div {
+    display: flex;
+    width: 100%;
+    margin: 0; } }
