@@ -439,28 +439,29 @@ footer {
     margin: 0; }
   /* Contacto */
   /* curso */
-  .programas {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .programas .carta {
+  #cursos {
+    /* curso */ }
+    #cursos .programas {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      max-width: 550px; }
-      .programas .carta .carta-parrafo {
+      align-items: center; }
+      #cursos .programas .carta {
         display: flex;
         flex-direction: column;
-        align-items: center; }
-        .programas .carta .carta-parrafo p {
-          padding: 2%; }
-        .programas .carta .carta-parrafo h3 {
-          width: 90%; }
-    .programas img {
-      width: 90%;
-      margin: 10px 0px; }
-  /* curso */ }
+        justify-content: center;
+        align-items: center;
+        max-width: 550px; }
+        #cursos .programas .carta .carta-parrafo {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          #cursos .programas .carta .carta-parrafo p {
+            padding: 2%; }
+          #cursos .programas .carta .carta-parrafo h3 {
+            width: 90%; }
+      #cursos .programas img {
+        width: 90%;
+        margin: 10px 0px; } }
 
 @media screen and (max-width: 880px) {
   /* Header */
@@ -568,22 +569,8 @@ footer {
           justify-content: center; }
   /* Footer */ }
 
-@media screen and (max-width: 625px) {
-  #cursos .programas .carta {
-    flex-direction: column; } }
-
 @media screen and (max-width: 520px) {
   .container-footer p {
     display: flex;
     justify-content: center;
-    margin: 0; }
-  .caracteristicas div {
-    width: 250px; }
-    .caracteristicas div img {
-      width: 220px; }
-    .caracteristicas div p {
-      width: 240px; }
-  .contacto div {
-    display: flex;
-    width: 100%;
     margin: 0; } }

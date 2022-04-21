@@ -35,7 +35,8 @@
     /* Proyectos */
     /* Contacto */
     .contratar{
-        .fondo-contratar{.contacto{
+        .fondo-contratar{
+            .contacto{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -70,8 +71,9 @@
     }
     /* Contacto */
     /* curso */
-    .programas{
-        display: flex;
+    #cursos{
+        .programas{
+            display: flex;
         flex-direction: column;
         align-items: center;
         .carta{
@@ -98,6 +100,7 @@
         }
     }
     /* curso */
+    }
 }
 
 @media screen and (max-width:880px){
@@ -232,37 +235,11 @@
     }
     /* Footer */
 }
-@media screen and (max-width:625px) {
-    #cursos{
-        .programas{
-            .carta{
-                flex-direction: column;
-            }
-        }
-    }
-}
-
 @media screen and (max-width:520px){
     .container-footer{
         p{
             display: flex;
             justify-content: center;
-            margin: 0;
-        }
-    }
-    .caracteristicas div{
-        width: 250px;
-        img{
-            width: 220px;
-        }
-        p{
-            width: 240px;
-        }
-    }
-    .contacto{
-        div{
-            display: flex;
-            width: 100%;
             margin: 0;
         }
     }
