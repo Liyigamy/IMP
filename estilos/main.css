@@ -576,4 +576,8 @@ footer {
   .container-footer p {
     display: flex;
     justify-content: center;
+    margin: 0; }
+  main .inicio .hero img {
+    height: 350px;
+    padding: 0;
     margin: 0; } }

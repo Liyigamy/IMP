@@ -236,11 +236,26 @@
     /* Footer */
 }
 @media screen and (max-width:520px){
+    // footer
     .container-footer{
         p{
             display: flex;
             justify-content: center;
             margin: 0;
         }
+    }
+    // footer
+    // index
+    main{
+        .inicio{
+            .hero{
+                img{
+                    height: 350px;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+        // index
     }
 }
