@@ -1,10 +1,7 @@
 #caracter{
-    display: flex;
-    flex-direction: column;
+    @extend .flex-columna_centrada;
     margin-top: 150px;
-    justify-content: center;
     text-align: center;
-    align-items: center;
     .caracteristicas {  
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -58,24 +55,23 @@
             grid-area: grilla10;
         }
         div{
-            display: flex;
+            @extend .flex-columna_centrada;
             text-align: center;
-            background-color: black;
+            background-color: map-get($colores, negro2);
             margin: 30px;
             border:solid 2px $amarillo;
             border-radius: 30px;
             padding:10px 30px;
             width: auto;
-            flex-direction: column;
-            align-items: center;
             max-width:400px;
             padding: 0;
+            transition: all 900ms ease;
             p{
                 background-color: $amarillo;
                 padding-top: 10px;
                 border-radius: 0px 0px 30px 30px;
                 margin: 5px;
-                color: black;
+                color: map-get($colores, negro);
                 margin-bottom: 5px;
                 width: 300px;
                 height: 200px;
@@ -94,6 +90,9 @@
                 margin-top: 10px;
                 color: black;
             }
+        }
+        div:hover{
+            @include movimiento3;
         }
     }
 }

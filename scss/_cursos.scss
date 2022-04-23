@@ -12,7 +12,7 @@
         margin: 20px;
         border: 1px solid $amarillo;
         border-radius: 15px;
-        background-color: black;
+        background-color: map-get($colores, negro2);
         transition: all 500ms ease;
         img{
             width: 250px;
@@ -22,11 +22,11 @@
         }
         .carta-parrafo{
             h3{
-                color: black;
+                color: map-get($colores, negro);
                 border: 0.1px solid $amarillo;
                 background-color: $amarillo;
                 border-radius: 10px;
-                border-color: black;
+                border-color: map-get($colores, negro);
                 padding: 7px;
                 font-size: 2em;
             }
@@ -46,11 +46,10 @@
             margin-left: 7px;
         }
         button:hover{
-            background-color: #ffffff;
+            background-color: map-get($colores, blanco);
         }
     }
     .carta:hover{
-        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
-        transform: translate(1%);
+    @include movimiento3;
     }
 }

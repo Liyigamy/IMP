@@ -1,9 +1,6 @@
 
 .proyectos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @extend .flex-columna_centrada;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -11,7 +8,7 @@
     margin-bottom: 247px;
     .proyectos-trabajos{
         display: flex;
-        background-color: rgba(0, 0, 0, 0.87);
+        background-color: map-get($colores, negro);
         border: 2px solid $amarillo;
         border-radius: 5px;
         width: 90%;
@@ -27,12 +24,12 @@
             transition: all 400ms ease;
             h3{
                 background-color: $amarillo;
-                color: black;
+                color: map-get($colores, negro);
                 font-size: 45px;
                 border-radius: 10px 10px 0px 0px;
             }
             p{
-                background-color: #e0ae0d;
+                background-color: $amarillo;
                 color: black;
                 border-radius: 0px 0px 10px 10px;
                 font-size: 20px;
@@ -48,9 +45,7 @@
             height: 500px;
         }
         .carta-proyecto:hover{
-            box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
-            transform: translate(3%);
-            background-color: rgb(59, 59, 59);
+            @include movimiento3;
         }
     }
 }

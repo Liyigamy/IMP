@@ -1,12 +1,10 @@
 .contratar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .flex-columna_centrada;
     font-size: 15px;
     margin-top: 150px;
     margin-bottom: 150px;
     .fondo-contratar{
-        background-color: rgba(0, 0, 0, 0.87);
+        background-color: map-get($colores, negro);
         width: 80%;
         margin: 20px;
         border: solid $amarillo 1px;
@@ -42,8 +40,8 @@
                 font-size: 15px;
                 .opcion{
                     display: flex;
-                    color: black;
-                    background-color: rgb(214, 169, 43);
+                    color: map-get($colores, negro);
+                    background-color: $amarillo;
                     width: 80%;
                 }
             }
@@ -66,25 +64,23 @@
                 grid-area: comentario;
                 height: 200px;
                 textarea{
-                    color: black;
+                    color: map-get($colores, negro);
                     width: 95%;
                     height: 95%;
-                    background-color: #e0ae0d;
+                    background-color: $amarillo;
                     font-size: 20px;
                 }
                 input{
                     margin: 0 40%;
-                    background-color: #e0ae0d;
+                    background-color: $amarillo;
                     height: 30px;
-                    color: black;
+                    color: map-get($colores, negro);
                 }
             }
             
             .ubi{
                 grid-area: ubi;
-                display: flex ;
-                flex-direction: column;
-                align-items: center;
+                @extend .flex-columna_centrada;
                 iframe{
                     height: 100%;
                 }

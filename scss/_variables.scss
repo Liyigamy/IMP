@@ -4,8 +4,27 @@ $color-nav: rgb(12, 12, 12);
 $centrado: center;
 $borde-amarillo: solid 1px rgb(214, 169, 43);
 
-@mixin Flex($flex, $column, $centro){
-    display: $flex;
-    flex-direction: $column;
-    align-items: $centro;
+// Clases
+.flex-columna_centrada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+// Clases
+// Mixin
+@mixin movimiento3{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+    transform: translate(1%);
+}
+// Mixin
+// Maps
+$colores:(
+    amarillo: rgb(214, 169, 43),
+    negro: rgb(10, 10, 10),
+    negro2: black,
+    gris-claro: rgb(190, 190, 190),
+    gris-oscuro: rgb(82, 82, 82),
+    blanco: rgb(245, 245, 245)
+);
+// Maps
