@@ -5,7 +5,7 @@
     margin: auto;
     text-align: center;
     margin-top: 150px;
-    margin-bottom: 247px;
+    margin-bottom: 50px;
     .proyectos-trabajos{
         display: flex;
         background-color: map-get($colores, negro);
@@ -22,6 +22,7 @@
             border-radius: 7px;
             border: solid 2px black;
             transition: all 400ms ease;
+            height: 100%;
             h3{
                 background-color: $amarillo;
                 color: map-get($colores, negro);
@@ -34,6 +35,7 @@
                 border-radius: 0px 0px 10px 10px;
                 font-size: 20px;
                 margin: 0;
+                height: 200px;
             }
             a{
                 text-decoration: none;
