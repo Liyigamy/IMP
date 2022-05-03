@@ -107,10 +107,9 @@
     /* Header */
     .header{
         width: 100%;
-        height: 200px;
+        height: 250px;
         position: relative;
         .logo-nav{
-            display: flex;
             flex-direction: column;
             img{
                 height: 75px;
@@ -129,10 +128,9 @@
                     justify-content: center;
                     margin-bottom: 10px;
                     li{
-                        width: 100%;
                         display: flex;
                         width: auto;
-                        height: 25px;
+                        height: 35px;
                         a{
                             width: 100%;
                             height: 100%;
@@ -249,5 +247,19 @@
             }
         }
         // index
+    }
+    .proyectos{
+        .proyectos-trabajos{
+            .carta-proyecto{
+                p{
+                    font-size: 18px;
+                }
+                
+            }
+            .carta-proyecto:hover{
+                transform: none;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+            }
+        }
     }
 }
