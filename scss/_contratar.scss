@@ -38,6 +38,9 @@
                 align-items: center;
                 margin: 20px;
                 font-size: 15px;
+                input{
+                    background-color: map-get($colores, amarillo);
+                }
                 .opcion{
                     display: flex;
                     color: map-get($colores, negro);
@@ -47,34 +50,52 @@
             }
             .nombre{
                 grid-area: nombre;
+                input{
+                    background-color: map-get($colores, amarillo);
+                }
             }
             .numero{
                 grid-area: numero;
+                input{
+                    background-color: map-get($colores, amarillo);
+                }
             }
             .pais{
                 grid-area: pais;
+                input{
+                    background-color: map-get($colores, amarillo);
+                }
             }
             .ciudad{
                 grid-area: ciudad;
+                input{
+                    background-color: map-get($colores, amarillo);
+                }
             }
             .email{
                 grid-area: email;
+                input{
+                    background-color: map-get($colores, amarillo);
+                }
             }
             .comentario{
                 grid-area: comentario;
                 height: 200px;
                 textarea{
                     color: map-get($colores, negro);
-                    width: 95%;
-                    height: 95%;
+                    width: 80%;
+                    height: 80%;
                     background-color: $amarillo;
                     font-size: 20px;
                 }
                 input{
-                    margin: 0 40%;
+                    margin: 2% 40%;
                     background-color: $amarillo;
                     height: 30px;
                     color: map-get($colores, negro);
+                }
+                input:hover{
+                    background-color: map-get($colores, blanco);
                 }
             }
             

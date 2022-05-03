@@ -94,6 +94,9 @@ body {
       max-width: 1400px;
       padding: 0% 7%;
       text-align: center; }
+      .inicio .hero p strong {
+        color: #fcd25f;
+        font-family: 'Roboto Condensed', sans-serif; }
     .inicio .hero a {
       padding: 10px 20px;
       background-color: #d6a92b;
@@ -168,6 +171,8 @@ footer {
         align-items: center;
         margin: 20px;
         font-size: 15px; }
+        .contratar .fondo-contratar .contacto .contacto input, .contratar .fondo-contratar .contacto .numero input, .contratar .fondo-contratar .contacto .pais input, .contratar .fondo-contratar .contacto .ciudad input, .contratar .fondo-contratar .contacto .email input, .contratar .fondo-contratar .contacto .comentario input, .contratar .fondo-contratar .contacto .nombre input {
+          background-color: #d6a92b; }
         .contratar .fondo-contratar .contacto .contacto .opcion, .contratar .fondo-contratar .contacto .numero .opcion, .contratar .fondo-contratar .contacto .pais .opcion, .contratar .fondo-contratar .contacto .ciudad .opcion, .contratar .fondo-contratar .contacto .email .opcion, .contratar .fondo-contratar .contacto .comentario .opcion, .contratar .fondo-contratar .contacto .nombre .opcion {
           display: flex;
           color: #0a0a0a;
@@ -175,28 +180,40 @@ footer {
           width: 80%; }
       .contratar .fondo-contratar .contacto .nombre {
         grid-area: nombre; }
+        .contratar .fondo-contratar .contacto .nombre input {
+          background-color: #d6a92b; }
       .contratar .fondo-contratar .contacto .numero {
         grid-area: numero; }
+        .contratar .fondo-contratar .contacto .numero input {
+          background-color: #d6a92b; }
       .contratar .fondo-contratar .contacto .pais {
         grid-area: pais; }
+        .contratar .fondo-contratar .contacto .pais input {
+          background-color: #d6a92b; }
       .contratar .fondo-contratar .contacto .ciudad {
         grid-area: ciudad; }
+        .contratar .fondo-contratar .contacto .ciudad input {
+          background-color: #d6a92b; }
       .contratar .fondo-contratar .contacto .email {
         grid-area: email; }
+        .contratar .fondo-contratar .contacto .email input {
+          background-color: #d6a92b; }
       .contratar .fondo-contratar .contacto .comentario {
         grid-area: comentario;
         height: 200px; }
         .contratar .fondo-contratar .contacto .comentario textarea {
           color: #0a0a0a;
-          width: 95%;
-          height: 95%;
+          width: 80%;
+          height: 80%;
           background-color: #d6a92b;
           font-size: 20px; }
         .contratar .fondo-contratar .contacto .comentario input {
-          margin: 0 40%;
+          margin: 2% 40%;
           background-color: #d6a92b;
           height: 30px;
           color: #0a0a0a; }
+        .contratar .fondo-contratar .contacto .comentario input:hover {
+          background-color: whitesmoke; }
       .contratar .fondo-contratar .contacto .ubi {
         grid-area: ubi; }
         .contratar .fondo-contratar .contacto .ubi iframe {
@@ -300,25 +317,34 @@ footer {
       border-radius: 7px;
       border: solid 2px black;
       transition: all 400ms ease;
-      height: 100%; }
+      height: 100%;
+      cursor: pointer; }
       .proyectos .proyectos-trabajos .carta-proyecto h3 {
         background-color: #d6a92b;
         color: #0a0a0a;
         font-size: 45px;
-        border-radius: 10px 10px 0px 0px; }
+        border-radius: 10px 10px 0px 0px;
+        cursor: pointer; }
       .proyectos .proyectos-trabajos .carta-proyecto p {
         background-color: #d6a92b;
         color: black;
         border-radius: 0px 0px 10px 10px;
         font-size: 20px;
         margin: 0;
-        height: 200px; }
+        height: 200px;
+        cursor: pointer; }
+        .proyectos .proyectos-trabajos .carta-proyecto p strong {
+          font-family: 'Roboto Condensed', sans-serif;
+          font-family: 'Water Brush', cursive;
+          color: #0a0a0a; }
       .proyectos .proyectos-trabajos .carta-proyecto a {
-        text-decoration: none; }
+        text-decoration: none;
+        cursor: pointer; }
     .proyectos .proyectos-trabajos img {
       width: 100%;
       display: flex;
-      height: 500px; }
+      height: 500px;
+      cursor: pointer; }
     .proyectos .proyectos-trabajos .carta-proyecto:hover {
       box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
       transform: translate(1%); }
@@ -355,6 +381,9 @@ footer {
     #cursos .carta .carta-parrafo p {
       padding-top: 75px;
       font-size: 20px; }
+      #cursos .carta .carta-parrafo p strong {
+        color: #fcd25f;
+        font-family: 'Roboto Condensed', sans-serif; }
     #cursos .carta button {
       font-size: 0.9em;
       font-weight: bold;
@@ -518,7 +547,8 @@ footer {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 30px; }
     #caracter .caracteristicas {
       display: flex;
       flex-direction: column; }

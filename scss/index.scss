@@ -110,6 +110,10 @@ body{
             max-width: 1400px;
             padding: 0% 7%;
             text-align: center;
+            strong{
+                color: map-get($colores, amarillo2);
+                font-family: 'Roboto Condensed', sans-serif;
+            }
         }
         a{
             padding: 10px 20px;
